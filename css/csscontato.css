@@ -1,0 +1,122 @@
+body {
+    background-color: #ffcc00;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.navbar {
+    background-color: crimson;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.navbar a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    font-size: 1.2rem; 
+    padding: 10px 15px;
+    border-radius: 5px; 
+    transition: background 0.3s, transform 0.3s;
+}
+.navbar a:hover {
+    background-color: firebrick; 
+    color: #ffcc00;
+    transform: scale(2.00); 
+}
+.logo{
+    align-items: center;
+}
+.logo img {
+    width: 100px;
+    padding: 0px;
+    margin: 0px;
+    margin-right: 25px;
+}
+section {
+    background-color: crimson;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+form label {
+    font-size: 1em;
+    color: #ffcc00;
+}
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: black;
+    font-family: sans-serif;
+}
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: black;
+    outline: none;
+}
+form button {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #ffcc00;
+    color: crimson;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+form button:hover {
+    opacity: 0.5;
+}
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 1.5em;
+    }
+    section h2 {
+        font-size: 1.5em;
+    }
+    .navbar a {
+        margin: 0 8px;
+        font-size: 0.9em;
+    }
+}
+h1 {
+    text-align: center;
+    color: #f5f5f5;
+    font-size: 3.5rem;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+h2 {
+    margin-top: 20px;
+    color: #ffcc00;
+}

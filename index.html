@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>LuxWheels</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/cssindex.css"/>
+        <link rel="icon" href="https://i.postimg.cc/2jQB1rgq/Lux-Wheels.png">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo">
+                <img src="https://i.postimg.cc/2jQB1rgq/Lux-Wheels.png" alt="Logo Correios">
+                <nav>
+                    <a href="index.html">Início</a>
+                    <a href="produtos.html">Produtos</a>
+                    <a href="contato.html">Contato</a>
+                </nav>
+            </div>    
+        </div>
+
+        <div class="slideshow-container">
+            <div class="image-container">
+                <img class="slides" src="https://i.postimg.cc/8cPg319f/1.jpg" alt="sobre" style="width:100%">
+            </div>
+
+            <div class="image-container">
+                <img class="slides" src="https://i.postimg.cc/tJSGGKGS/2.jpg" alt="missao" style="width:100%">
+            </div>
+
+            <div class="image-container">
+                <img class="slides" src="https://i.postimg.cc/6Qrsp2NG/3.jpg" alt="visao" style="width:100%">
+            </div>
+            
+            <div class="image-container">
+                <img class="slides" src="https://i.postimg.cc/sx8Hcsrr/4.jpg" alt="valores" style="width:100%">
+            </div>
+
+            <div class="controls">
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+
+        </div>
+        <div class="dots">
+            <span class="dot active-dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        <script src="js/jsindex.js"></script>
+    </body>
+</html>

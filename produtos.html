@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Produtos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/cssprodutos.css"/>
+        <link rel="icon" href="https://i.postimg.cc/2jQB1rgq/Lux-Wheels.png">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo">
+                <img src="https://i.postimg.cc/yYpBt2S9/Lux-Wheels-Photoroom.png" alt="Logo Correios">
+                <nav>
+                    <a href="index.html">Início</a>
+                    <a href="produtos.html">Produtos</a>
+                    <a href="contato.html">Contato</a>
+                </nav>
+            </div>    
+        </div>
+        
+        <main class="content">
+            
+        <button id="carrinho-btn" onclick="toggleCarrinho()">🛒</button>
+        <section id="produtos">
+            <div class="product-list">
+                <!-- RODAS -->
+                <div class="product" data-nome="Roda HRE P107SC">
+                    <img src="https://i.postimg.cc/9FbNCZrX/image-Photoroom.png" alt="Roda HRE P107SC">
+                    <h3>Roda HRE P107SC</h3>
+                    <p>Várias cores - de 19" até 23"</p>
+                    <p>US$ 3.275</p>
+                    <button onclick="toggleCarrinhoItem(this, 'Roda HRE P107SC')">Adicionar ao Carrinho</button>
+                </div>
+                
+                <div class="product" data-nome="Roda HRE 501M">
+                    <img src="https://i.postimg.cc/PJ42d0QW/image-Photoroom.png" alt="Roda HRE 501M">
+                    <h3>Roda HRE 501M</h3>
+                    <p>Várias cores - de 17" até 22"</p>
+                    <p>US$ 2.575</p>
+                    <button onclick="toggleCarrinhoItem(this, 'Roda HRE 501M')">Adicionar ao Carrinho</button>
+                </div>
+                
+                <div class="product" data-nome="Roda HRE HX100">
+                    <img src="https://i.postimg.cc/sgpbMf4z/image-Photoroom-1.png" alt="Roda HRE HX100">
+                    <h3>Roda HRE HX100</h3>
+                    <p>Carbon Series -  de 20" até 22"</p>
+                    <p>US$ 6.700</p>
+                    <button onclick="toggleCarrinhoItem(this, 'Roda HRE HX100')">Adicionar ao Carrinho</button>
+                </div>
+                
+                <!-- PNEUS -->
+                <div class="product" data-nome="Michelin Pilot Sport Cup 2">
+                    <img src="https://i.postimg.cc/nVq8PMZf/image-Photoroom-2.png" alt="Michelin Pilot Sport Cup 2">
+                    <h3>Michelin Pilot Sport Cup 2</h3>
+                    <p>45 medidas - 17", 19", 20" e 21"</p>
+                    <p>US$ 800</p>
+                    <button onclick="toggleCarrinhoItem(this, 'Michelin Pilot Sport Cup 2')">Adicionar ao Carrinho</button>
+                </div>
+                
+                <div class="product" data-nome="Bridgestone Potenza S001">
+                    <img src="https://i.postimg.cc/y8G70d0g/davsvuadsvuavsudvasu.png" alt="Bridgestone Potenza S001">
+                    <h3>Bridgestone Potenza S001</h3>
+                    <p>26 medidas - de 17" até 20"</p>
+                    <p>US$ 175</p>
+                    <button onclick="toggleCarrinhoItem(this, 'Bridgestone Potenza S001')">Adicionar ao Carrinho</button>
+                </div>
+                
+                <div class="product" data-nome="Pirelli PZERO™ Corsa (PZC4)">
+                    <img src="https://i.postimg.cc/d1D9fJ1y/image-Photoroom-4.png" alt="Pirelli PZERO™ Corsa (PZC4)">
+                    <h3>Pirelli PZERO™ Corsa (PZC4)</h3>
+                    <p>11 medidas -  de 19" até 20"</p>
+                    <p>US$ 820</p>
+                    <button onclick="toggleCarrinhoItem(this, 'Pirelli PZERO™ Corsa (PZC4)')">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carrinho de Compras -->
+        <section id="carrinho" class="hidden">
+            <h4>Carrinho de Compras</h4><br>
+            <ul id="carrinho-lista"></ul>
+            <p id="carrinho-vazio">Seu carrinho está vazio.</p>
+            <button id="finalizar-compra">Finalizar Compra</button>
+        </section>
+    </main>
+        
+        
+        
+        
+    </body>
+    <script src="js/jsproduto.js"></script>
+</html>
